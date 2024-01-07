@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+    font-family:'roboto',sans-serif;
+}
+
+
+.warpper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.warpper > *{
+    padding: 10PX;
+    margin: 10px;
+    flex: 100%;
+}
+
+
+
+
+
+
+.header{
+    background-color: yellow;
+    height: 120px;
+}
+.footer{
+    background-color:#34b3e6 ;
+    height: 80px;
+
+}
+.main{
+    background-color: rgb(255, 53, 53);
+    height: 300px;
+}
+
+.slide1{
+    background-color: purple;
+
+}
+.slide2{
+    background-color: aquamarine;
+}
+
+@media all and (min-width:800px){
+    .main{
+        flex: 3;
+    }
+    .slide1{
+        order: 1;
+    }
+    .slide2{
+        order: 2;
+        
+
+    }
+    .main
+    {
+        order: 2;
+    }
+    .footer{
+        order: 4;
+    }
+
+}
+
+@media all and (min-width:600px){
+    .slide1{
+        flex: 1;
+    }
+    .slide2{
+        flex: 1;
+    }
+}
+
+
+
